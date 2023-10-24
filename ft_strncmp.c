@@ -1,19 +1,44 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
-    char str1[] = "banana";
-    char str2[] = "banata";
+int ft_strncmp(const char *str1, const char *str2, size_t n)
+{
+    int i = 0;  
 
-    int result = strncmp(str1, str2, 3);
+    while(str1[i] == str2[i] && n > 0)
+    {
+        i++;
+        n--;
+    }
+    return (str1[i] - str2[i]);
+}
+int main() {
+    char str1[] = "banani verde";
+    char str2[] = "banano";
+
+    int result = ft_strncmp(str1, str2,5);
 
     if (result == 0) {
-        printf("As strings são iguais nos primeiros 3 caracteres.\n");
+        printf("ft_strncmp: As strings são iguais .\n");
     } else if (result < 0) {
-        printf("str1 é menor que str2 nos primeiros 3 caracteres.\n");
+        printf("ft_strncmp: str1 é menor que str2 \n");
     } else {
-        printf("str1 é maior que str2 nos primeiros 3 caracteres.\n");
+        printf("ft_strncmp: str1 é maior que str2 \n");
     }
+
+    int result2 = strncmp(str1, str2,5);
+
+    if (result == 0) {
+        printf("strncmp: As strings são iguais \n");
+    } else if (result < 0) {
+        printf("strncmp: str1 é menor que str2 \n");
+    } else {
+        printf("strncmp: str1 é maior que str2 \n");
+    }
+
+
+
+
 
     return 0;
 }
