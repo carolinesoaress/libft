@@ -15,7 +15,7 @@ int ft_strncmp(const char *str1, const char *str2, size_t n)
     }
     return (str1[i] - str2[i]);
 }
-int main() {
+/*int main() {
     char str1[] = "banani verde";
     char str2[] = "banano";
 
@@ -44,4 +44,4 @@ int main() {
 
 
     return 0;
-}
+}*/
