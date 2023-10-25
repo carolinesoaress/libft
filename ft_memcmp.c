@@ -1,4 +1,4 @@
-#include "stdlib.h"
+#include "libft.h"
 
 int ft_memcmp(const void *ptr1, const void *ptr2, size_t n)
 {
@@ -9,6 +9,9 @@ int ft_memcmp(const void *ptr1, const void *ptr2, size_t n)
     str1 = (unsigned char *) ptr1;
     str2 = (unsigned char *) ptr2;
     i = 0;
+    
+    if (n == 0)
+		return (0);
     while (i < n)
     {   
         if (str1[i] != str2[i])
