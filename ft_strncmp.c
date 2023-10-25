@@ -19,7 +19,7 @@ int main() {
     char str1[] = "banani verde";
     char str2[] = "banano";
 
-    int result = ft_strncmp(str1, str2,5);
+    int result = ft_strncmp(str1, str2,7);
 
     if (result == 0) {
         printf("ft_strncmp: As strings são iguais .\n");
@@ -29,7 +29,7 @@ int main() {
         printf("ft_strncmp: str1 é maior que str2 \n");
     }
 
-    int result2 = strncmp(str1, str2,5);
+    int result2 = strncmp(str1, str2,7);
 
     if (result == 0) {
         printf("strncmp: As strings são iguais \n");

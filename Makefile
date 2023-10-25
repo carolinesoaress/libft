@@ -8,7 +8,8 @@ SOURCES     := ft_bzero.c \
 			   ft_strlcpy.c \
 			   ft_tolower.c \
 			   ft_toupper.c \
-			   ft_strchr.c
+			   ft_strchr.c	\
+			   ft_strncmp.c
 
 OBJECTS     := ${SOURCES:.c=.o}
 CC          := cc
