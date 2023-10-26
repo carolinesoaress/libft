@@ -16,9 +16,10 @@ char *ft_strchr(const char *str, int c)
 
 int main() {
     const char *str = "Hello, World!";
-    char c = 'V';
+    char c = 'A';
 
-   printf("%s\n", ft_strchr(str, c));
+   printf("Original: %s\n", ft_strchr(str, c));
+   printf("Minha: %s\n", strchr(str, c));
 
     return 0;
 }
