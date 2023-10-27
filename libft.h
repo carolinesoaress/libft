@@ -21,5 +21,6 @@ int ft_memcmp(const void *ptr1, const void *ptr2, size_t n);
 char *ft_strnstr(const char *src, const char *sub, size_t n);
 void *ft_calloc(size_t num_elements, size_t element_size);
 char *ft_strdup(const char *str);
+char *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

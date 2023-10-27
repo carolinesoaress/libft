@@ -20,7 +20,7 @@ char *ft_strdup(const char *str)
     cpy[i] = '\0';
     return (cpy);
 }
-int main() {
+/*int main() {
     const char *original = "Hello, world!";
     char *copy = ft_strdup(original);
     
@@ -36,3 +36,4 @@ int main() {
     
     return 0;
 }
+*/
