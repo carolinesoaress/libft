@@ -16,7 +16,7 @@ char *ft_strchr(const char *str, int c)
 
 int main() {
     const char *str = "Hello, World!";
-    char c = 'A';
+    int c = 'o';
 
    printf("Original: %s\n", ft_strchr(str, c));
    printf("Minha: %s\n", strchr(str, c));
