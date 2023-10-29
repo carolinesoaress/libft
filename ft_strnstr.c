@@ -26,11 +26,10 @@ char *ft_strnstr(const char *src, const char *sub, size_t n)
     }
     return (NULL);
 }
-
-int main() {
+/*int main() {
     const char *haystack = "&oei";
     const char *needle = "o";
     printf("strstr: %s\n", strstr(haystack, needle));
     printf("FT_strnstr: %s\n", ft_strnstr(haystack, needle, 5));
     return 0;
-}
+}*/
