@@ -16,7 +16,7 @@ char    *ft_strtrim(char const *s1, char const *set)
     if (start == end) {
         // A string consiste apenas de caracteres a serem removidos.
         // Nesse caso, retorne uma string vazia.
-        return strdup("");
+        return ft_strdup("");
     }
 
     while (end > start && strchr(set, s1[end - 1]) != NULL) {
@@ -30,7 +30,7 @@ char    *ft_strtrim(char const *s1, char const *set)
         return NULL; // Falha na alocação de memória.
     }
 
-    strncpy(trimmed_str, s1 + start, trimmed_length);
+    ft_strncpy(trimmed_str, s1 + start, trimmed_length);
     trimmed_str[trimmed_length] = '\0';
 
     return trimmed_str;
