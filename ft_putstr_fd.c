@@ -4,7 +4,7 @@ void    ft_putstr_fd(char *s, int fd)
 {
     if (!s)
 		return ;
-        
+
     size_t  i;
 
     i = 0;
@@ -15,4 +15,3 @@ void    ft_putstr_fd(char *s, int fd)
         i++;
     }
 }
-
