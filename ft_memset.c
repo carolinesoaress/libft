@@ -8,9 +8,9 @@ void *ft_memset(void *dest, int c, size_t n)
   
     while(n > 0)
     {
-        str[n - 1] = c;
-        n--;
-    }
+        str[n - 1] = c; // o valor c é atribuído ao byte atual na posição n - 1  -1 pois inicia com str[0]
+        n--;    // Após a atribuição, n é decrementado para que o próximo byte 
+    }           //na área de memória seja preenchido na próxima iteração do loop.
     return (dest);
 }
 
